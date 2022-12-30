@@ -249,3 +249,21 @@ body {
     color: #fff;
   }
 }
+
+/* add depth to the page */
+.service-card {
+  /* Other styles */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3 {
+  /* Other styles */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image img {
+  /* Other styles */
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+}
