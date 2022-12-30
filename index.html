@@ -20,6 +20,17 @@
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- HERO SECTION -->
     <section
       id="hero"
@@ -133,4 +144,24 @@
       </form>
     </section>
   </body>
+  <script type="text/javascript">
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      const top = element.offsetTop;
+
+      window.scrollTo({
+        top,
+        behavior: 'smooth',
+      });
+    }
+    const navLinks = document.querySelectorAll('header nav ul li a');
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = e.target.getAttribute('href').slice(1);
+        scrollToSection(id);
+      });
+    });
+  </script>
 </html>
