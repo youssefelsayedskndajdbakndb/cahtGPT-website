@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lightring.ai | Software Development</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* FADE IN ANIMATION */
+      .fade-in {
+        animation: fade-in 0.5s forwards;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section id="hero" class="fade-in">
+      <div class="hero-text">
+        <h1>Lightring.ai</h1>
+        <h2>Expert Software Development</h2>
+        <p>We specialize in creating custom software solutions for businesses of all sizes.</p>
+        <a href="#services" class="btn">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://unsplash.it/1920/1024"
+          alt="A team of software developers working on a project"
+        />
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="fade-in">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service">
+          <h3>Custom Software Development</h3>
+          <p>We build software solutions tailored to your specific business needs.</p>
+        </div>
+        <div class="service">
+          <h3>API Development</h3>
+          <p>We create APIs to allow different software systems to communicate with each other.</p>
+        </div>
+        <div class="service">
+          <h3>Software Maintenance &amp; Support</h3>
+          <p>
+            We provide ongoing maintenance and support for your software to ensure it is always
+            running smoothly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="fade-in">
+      <h2>Our Team</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="https://unsplash.it/1920/1024" alt="A software developer" />
+          <h3>John Smith</h3>
+          <p>Founder &amp; Lead Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://unsplash.it/1920/1024" alt="A software developer" />
+          <h3>Jane Doe</h3>
+          <p>Senior Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://unsplash.it/1920/1024" alt="A software developer" />
+          <h3>Bob Johnson</h3>
+          <p>Junior Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about-us" class="fade-in">
+      <h2>About Us</h2>
+      <p>
+        Lightring.ai was founded in 2020 with the goal of providing expert software development
+        services to businesses of all sizes. Our team of experienced developers has a proven track
+        record of delivering high-quality, reliable software solutions on time and on budget.
+      </p>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br />
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+  </body>
+</html>
