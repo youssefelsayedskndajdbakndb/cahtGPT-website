@@ -50,7 +50,7 @@ body {
   max-width: 500px;
 }
 
-/* SERVICES SECTION */
+/* SERVICES SECTION
 #services {
   padding: 50px 0;
 }
@@ -80,6 +80,69 @@ body {
 
 .service p {
   font-size: 1em;
+} */
+
+/* SERVICES SECTION */
+#services {
+  margin: 80px 0;
+  text-align: center;
+}
+
+#services h2 {
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-image {
+  width: 100%;
+  height: 50%;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-text {
+  padding: 20px;
+  height: 50%;
+}
+
+.service-text h3 {
+  margin-bottom: 10px;
+}
+
+/* SERVICE CARD HOVER ANIMATION */
+.service-card:hover {
+  animation: hover-animation 0.3s forwards;
+}
+
+@keyframes hover-animation {
+  from {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  }
 }
 
 /* TEAM SECTION */
